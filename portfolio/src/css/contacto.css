@@ -1,0 +1,35 @@
+.contact-section {
+  padding: 15px 0;
+  text-align: center;
+
+  background-color: #333;
+  color: white;
+}
+
+.contact-section h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.contact-section p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section li {
+  margin-bottom: 10px;
+}
+
+.contact-section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}

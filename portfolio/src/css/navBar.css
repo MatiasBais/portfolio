@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed; /* Fijar la barra de navegación en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end; /* Alinear los elementos a la derecha */
+  align-items: center; /* Alinear verticalmente los elementos al centro */
+  z-index: 999; /* Asegurar que la barra de navegación esté sobre otros elementos */
+  padding-right: 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.a-right {
+  margin-right: 40px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
