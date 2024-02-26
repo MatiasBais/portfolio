@@ -46,23 +46,25 @@ function App() {
   ];
 
   return (
-    <div>
-      <Navbar />
-      <AboutMe />
-      <div id="projects" className="project-cards-container">
-        {proyectos.map((proyecto, index) => (
-          <TarjetaProyecto
-            key={index}
-            title={proyecto.title}
-            image={proyecto.image}
-            description={proyecto.description}
-            link={proyecto.link}
-            linkText={proyecto.linkText}
-          />
-        ))}
+    <>
+      <div>
+        <Navbar />
+        <AboutMe />
+        <div id="projects" className="project-cards-container">
+          {proyectos.map((proyecto, index) => (
+            <TarjetaProyecto
+              key={index}
+              title={proyecto.title}
+              image={proyecto.image}
+              description={proyecto.description}
+              link={proyecto.link}
+              linkText={proyecto.linkText}
+            />
+          ))}
+        </div>
+        <Contacto />
       </div>
-      <Contacto />
-    </div>
+    </>
   );
 }
 

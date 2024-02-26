@@ -17,10 +17,10 @@ const AboutMe = () => {
             faltan tres exámenes para obtener mi título.
           </p>
           <p>
-            Me apasiona la programación desde que era joven y he aprendido
-            varios lenguajes como C#, SQL, Python y JavaScript. Además, durante
-            mi carrera he explorado Java, ASP.Net, React.JS, PHP, Laravel,
-            NodeJS y más.
+            Me apasiona la programación desde que chico y he aprendido varios
+            lenguajes como C#, SQL, Python y JavaScript. Además, durante mi
+            carrera he explorado Java, ASP.Net, React.JS, PHP, Laravel, NodeJS y
+            más.
           </p>
           <p>
             He estado involucrado en proyectos usando diferentes patrones de
