@@ -8,16 +8,20 @@ import projectImage2 from "./img/melicompara.png"; // Ruta de la imagen del proy
 import projectImage3 from "./img/academia.png"; // Ruta de la imagen del proyecto 3
 import projectImage4 from "./img/faqutn.png"; // Ruta de la imagen del proyecto 4
 import Contacto from "./componentes/contacto";
+import ProjectPage from "./componentes/projectPage";
 
 function App() {
   const proyectos = [
     {
       title: "IkaCoords",
+      name: "project1",
       image: projectImage1,
       description:
-        "Web hecha con Laravel para realizar búsquedas de información sobre un juego de navegador llamado Ikariam",
-      link: "https://github.com/MatiasBais/IkaCoordsLaravel",
-      linkText: "IkaCoords",
+        "A Laravel project for obtaining valuable information about the popular web browser game Ikariam",
+        p1:"Data is collected through a Python script performing web scraping on the game.",
+        p2:"Users can explore cities using diverse criteria such as player name, city name, or even geographical location on the game map. Additionally, the webpage offers highscores rankings not available in the game itself.",
+        github: "https://github.com/MatiasBais/IkaCoordsLaravel",
+      deployed: "https://ikacoords.heliohost.us",
     },
     {
       title: "MeliCompara",
@@ -45,6 +49,7 @@ function App() {
     },
   ];
 
+
   return (
     <>
       <div>
@@ -62,6 +67,20 @@ function App() {
             />
           ))}
         </div>
+        {proyectos.map((proyecto, index) => (
+            <ProjectPage
+              key={index}
+              title={proyecto.title}
+              name={proyecto.name}
+              image={proyecto.image}
+              description={proyecto.description}
+              p1={proyecto.p1}
+              p2={proyecto.p2}
+              github={proyecto.github}
+              deployed={proyecto.deployed}
+              linkText={proyecto.linkText}
+            />
+          ))}
         <Contacto />
       </div>
     </>

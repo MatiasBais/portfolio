@@ -15,6 +15,11 @@
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out; /* Add transition effect */
+}
+
+.project-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
 }
 
 .project-image {
@@ -34,6 +39,15 @@
 
 .project-details p {
   color: #bebcbc;
+}
+
+.project-link {
+  text-decoration: none; /* Remove default link styling */
+  color: inherit; /* Inherit color from parent */
+}
+
+.project-link:hover .project-details {
+  background-color: rgba(0, 0, 0, 0.1); /* Change background color on hover */
 }
 
 .project-details a {

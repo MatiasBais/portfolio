@@ -1,0 +1,55 @@
+.project-page {
+    display: flex;
+    height: 100vh; /* Set height to 100% of viewport height */
+    text-align: center;
+    background-color: #333;
+    color: white;
+  }
+  
+  .left {
+    flex: 1; /* Take up 50% of the available space */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    padding-left: 20px;
+  }
+  
+  
+  .project-page-image {
+    max-width: 100%; /* Make sure the image fills its container */
+    max-height: 100%; /* Make sure the image fills its container */
+  }
+  
+  .right h3 {
+    margin-top: 0; /* Remove default margin for the title */
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .description {
+    margin-bottom: 10px; /* Add some margin between description and links */
+  }
+  
+  .git-link,
+  .deployed-link {
+    display: inline-block;
+    margin-right: 10px; /* Add some space between links */
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .git-link:hover,
+  .deployed-link:hover {
+    background-color: #0056b3; /* Darken the background color on hover */
+  }
+  
