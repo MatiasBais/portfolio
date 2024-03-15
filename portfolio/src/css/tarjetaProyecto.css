@@ -16,6 +16,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out; /* Add transition effect */
+  height: 400px;
 }
 
 .project-card:hover {

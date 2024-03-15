@@ -13,14 +13,20 @@ import ProjectPage from "./componentes/projectPage";
 function App() {
   const proyectos = [
     {
+      title: "FAQ UTN",
+      image: projectImage4,
+      description:
+        "Web desarrollada con Node para realizar preguntas y respuestas dentro de un contexto acádemico.",
+      github: "https://github.com/c3r38r170/FAQ-UTN",
+      deployed: "https://faq-utn-production.up.railway.app/",
+    },
+    {
       title: "IkaCoords",
       name: "project1",
       image: projectImage1,
       description:
         "A Laravel project for obtaining valuable information about the popular web browser game Ikariam",
-        p1:"Data is collected through a Python script performing web scraping on the game.",
-        p2:"Users can explore cities using diverse criteria such as player name, city name, or even geographical location on the game map. Additionally, the webpage offers highscores rankings not available in the game itself.",
-        github: "https://github.com/MatiasBais/IkaCoordsLaravel",
+      github: "https://github.com/MatiasBais/IkaCoordsLaravel",
       deployed: "https://ikacoords.heliohost.us",
     },
     {
@@ -28,25 +34,18 @@ function App() {
       image: projectImage2,
       description:
         "Web desarrollada con Flask para comparar precios de Mercado Libre a través del tiempo.",
-      link: "https://github.com/MatiasBais/TPISoporteG12",
-      linkText: "MeliCompara",
+      github: "https://github.com/MatiasBais/TPISoporteG12",
+      deployed: "https://melicompara.pythonanywhere.com/",
     },
     {
       title: "Academia",
       image: projectImage3,
       description:
         "Aplicación de escritorio hecha con C# para la administración de una universidad.",
-      link: "https://github.com/MatiasBais/AcademiaNet",
-      linkText: "Academia",
+      github: "https://github.com/MatiasBais/AcademiaNet",
+      deployed: "",
     },
-    {
-      title: "FAQ UTN",
-      image: projectImage4,
-      description:
-        "Web desarrollada con Node para realizar preguntas y respuestas dentro de un contexto acádemico.",
-      link: "",
-      linkText: "FAQ UTN",
-    },
+
   ];
 
 
@@ -67,7 +66,8 @@ function App() {
             />
           ))}
         </div>
-        {proyectos.map((proyecto, index) => (
+        <div className="projects-container">
+          {proyectos.map((proyecto, index) => (
             <ProjectPage
               key={index}
               title={proyecto.title}
@@ -81,6 +81,7 @@ function App() {
               linkText={proyecto.linkText}
             />
           ))}
+        </div>
         <Contacto />
       </div>
     </>
