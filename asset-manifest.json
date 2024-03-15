@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f38c1ef4.css",
-    "main.js": "/portfolio/static/js/main.dd515e0b.js",
+    "main.css": "/portfolio/static/css/main.7992d595.css",
+    "main.js": "/portfolio/static/js/main.cdbd6a1f.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/fondo.jpg": "/portfolio/static/media/fondo.bb640353b7b63f65b8e3.jpg",
-    "static/media/faqutn.png": "/portfolio/static/media/faqutn.635bf3bfd5512a11a75d.png",
+    "static/media/fondo.jpg": "/portfolio/static/media/fondo.4bf7df25850def0f9e75.jpg",
+    "static/media/faqutn.png": "/portfolio/static/media/faqutn.cf7dac200017c6c63dab.png",
     "static/media/ikacoords.png": "/portfolio/static/media/ikacoords.f4033d8ff1f02c7ed76c.png",
     "static/media/MatiasBaisCV.pdf": "/portfolio/static/media/MatiasBaisCV.3072bd3158b87bb6f513.pdf",
     "static/media/melicompara.png": "/portfolio/static/media/melicompara.300e26b971e83e0b8f92.png",
     "static/media/academia.png": "/portfolio/static/media/academia.5c329f16815579b403d8.png",
     "index.html": "/portfolio/index.html",
-    "main.f38c1ef4.css.map": "/portfolio/static/css/main.f38c1ef4.css.map",
-    "main.dd515e0b.js.map": "/portfolio/static/js/main.dd515e0b.js.map",
+    "main.7992d595.css.map": "/portfolio/static/css/main.7992d595.css.map",
+    "main.cdbd6a1f.js.map": "/portfolio/static/js/main.cdbd6a1f.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f38c1ef4.css",
-    "static/js/main.dd515e0b.js"
+    "static/css/main.7992d595.css",
+    "static/js/main.cdbd6a1f.js"
   ]
 }
