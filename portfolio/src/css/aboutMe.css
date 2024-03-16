@@ -23,7 +23,8 @@
   right: 20px; /* Lo colocamos a 20px del borde izquierdo */
   transform: translateY(-50%); /* Centramos verticalmente el texto */
   max-width: 400px; /* Limitamos el ancho del texto para que no se extienda demasiado */
-  color: white; /* Color del texto */
+  color: rgb(201, 200, 212); /* Color del texto */
+  padding: 20px;
 }
 
 .text-container h2 {

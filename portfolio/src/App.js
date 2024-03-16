@@ -7,6 +7,7 @@ import projectImage1 from "./img/ikacoords.png"; // Ruta de la imagen del proyec
 import projectImage2 from "./img/melicompara.png"; // Ruta de la imagen del proyecto 2
 import projectImage3 from "./img/academia.png"; // Ruta de la imagen del proyecto 3
 import projectImage4 from "./img/faqutn.png"; // Ruta de la imagen del proyecto 4
+import projectImage5 from "./img/Turnos.png";
 import Contacto from "./componentes/contacto";
 import ProjectPage from "./componentes/projectPage";
 
@@ -21,6 +22,22 @@ function App() {
       deployed: "https://faq-utn-production.up.railway.app/",
     },
     {
+      title: "MeliCompara",
+      image: projectImage2,
+      description:
+        "Web desarrollada con Flask para comparar precios de Mercado Libre a través del tiempo.",
+      github: "https://github.com/MatiasBais/TPISoporteG12",
+      deployed: "https://melicompara.pythonanywhere.com/",
+    },
+    {
+      title: "Turnos",
+      image: projectImage5,
+      description:
+        "Aplicación enlatada para la reserva de turnos desarrollado con ReactNative",
+      github: "https://github.com/MatiasBais/TurnosFront",
+      deployed: "",
+    },
+    {
       title: "IkaCoords",
       name: "project1",
       image: projectImage1,
@@ -28,14 +45,6 @@ function App() {
         "A Laravel project for obtaining valuable information about the popular web browser game Ikariam",
       github: "https://github.com/MatiasBais/IkaCoordsLaravel",
       deployed: "https://ikacoords.heliohost.us",
-    },
-    {
-      title: "MeliCompara",
-      image: projectImage2,
-      description:
-        "Web desarrollada con Flask para comparar precios de Mercado Libre a través del tiempo.",
-      github: "https://github.com/MatiasBais/TPISoporteG12",
-      deployed: "https://melicompara.pythonanywhere.com/",
     },
     {
       title: "Academia",
