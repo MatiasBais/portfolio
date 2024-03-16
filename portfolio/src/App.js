@@ -42,7 +42,7 @@ function App() {
       name: "project1",
       image: projectImage1,
       description:
-        "A Laravel project for obtaining valuable information about the popular web browser game Ikariam",
+        "Proyecto en Laravel para buscar información acerca del popular juego de navegador Ikariam",
       github: "https://github.com/MatiasBais/IkaCoordsLaravel",
       deployed: "https://ikacoords.heliohost.us",
     },
