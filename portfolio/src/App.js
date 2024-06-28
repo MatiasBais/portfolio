@@ -18,8 +18,8 @@ function App() {
       image: projectImage4,
       description:
         "Web desarrollada con Node para realizar preguntas y respuestas dentro de un contexto acádemico.",
-      github: "https://github.com/c3r38r170/FAQ-UTN",
-      deployed: "https://faq-utn-production.up.railway.app/",
+      github: "https://github.com/MatiasBais/FAQ-UTN",
+      deployed: "https://faq-utn-production-bb46.up.railway.app/",
     },
     {
       title: "MeliCompara",
