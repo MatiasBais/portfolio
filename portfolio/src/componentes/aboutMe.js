@@ -14,13 +14,14 @@ const AboutMe = () => {
           <p>
             ¡Hola! Soy Matías Bais, un estudiante de Ingeniería en Sistemas en la
             UTN Argentina. Estoy en el último tramo de mis estudios y solo me
-            faltan tres exámenes para obtener mi título.
+            falta un exámen para obtener mi título.
           </p>
           <p>
             Me apasiona la programación desde chico y he aprendido varios
             lenguajes como C#, SQL, Python y JavaScript. Además, durante mi
             carrera he explorado Java, PHP, SmallTalk, Pascal, C y
             más.
+            Soy fluido en Inglés
           </p>
           <p>
             He estado involucrado en proyectos usando diferentes frameworks como Node.JS, Laravel, React, ReactNative, entre otros
