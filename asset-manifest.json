@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6f74d0d8.css",
-    "main.js": "/portfolio/static/js/main.065d55e8.js",
+    "main.js": "/portfolio/static/js/main.b30dbbfa.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/fondo.jpg": "/portfolio/static/media/fondo.4bf7df25850def0f9e75.jpg",
     "static/media/MatiasBaisCV.pdf": "/portfolio/static/media/MatiasBaisCV.e15d61fe21618260b2fd.pdf",
@@ -12,11 +12,11 @@
     "static/media/academia.png": "/portfolio/static/media/academia.5c329f16815579b403d8.png",
     "index.html": "/portfolio/index.html",
     "main.6f74d0d8.css.map": "/portfolio/static/css/main.6f74d0d8.css.map",
-    "main.065d55e8.js.map": "/portfolio/static/js/main.065d55e8.js.map",
+    "main.b30dbbfa.js.map": "/portfolio/static/js/main.b30dbbfa.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6f74d0d8.css",
-    "static/js/main.065d55e8.js"
+    "static/js/main.b30dbbfa.js"
   ]
 }
