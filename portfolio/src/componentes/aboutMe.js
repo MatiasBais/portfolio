@@ -25,6 +25,7 @@ const AboutMe = () => {
           </p>
           <p>
             He estado involucrado en proyectos usando diferentes frameworks como Node.JS, Laravel, React, ReactNative, entre otros
+            Actualmente estoy colaborando en un proyecto de preservación que intenta revivir y restaurar el juego de Flash de 2010 Backyard Monsters
           </p>
         </div>
       </div>
