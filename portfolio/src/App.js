@@ -19,7 +19,8 @@ function App() {
       description:
         "Web desarrollada con Node para realizar preguntas y respuestas dentro de un contexto acádemico.",
       github: "https://github.com/MatiasBais/FAQ-UTN",
-      deployed: "https://faq-utn-production-bb46.up.railway.app/",
+      deployed: "",
+      //deployed: "https://faq-utn-production-bb46.up.railway.app/",
     },
     {
       title: "MeliCompara",
@@ -27,7 +28,8 @@ function App() {
       description:
         "Web desarrollada con Flask para comparar precios de Mercado Libre a través del tiempo.",
       github: "https://github.com/MatiasBais/TPISoporteG12",
-      deployed: "https://melicompara.pythonanywhere.com/",
+      deployed: "",
+      //deployed: "https://melicompara.pythonanywhere.com/",
     },
     {
       title: "Turnos",
