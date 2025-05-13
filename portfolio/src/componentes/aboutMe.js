@@ -12,9 +12,8 @@ const AboutMe = () => {
         <div className="text-container">
           <h2>Acerca de Mi</h2>
           <p>
-            ¡Hola! Soy Matías Bais, un estudiante de Ingeniería en Sistemas en la
-            UTN Argentina. Estoy en el último tramo de mis estudios y solo me
-            falta un exámen para obtener mi título.
+            ¡Hola! Soy Matías Bais, Ingeniero en Sistemas de la
+            UTN Argentina.
           </p>
           <p>
             Me apasiona la programación desde chico y he aprendido varios
