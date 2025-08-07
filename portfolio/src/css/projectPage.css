@@ -37,3 +37,30 @@
     background-color: #0056b3; /* Darken the background color on hover */
   }
   
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+  }
+  
+  .project-page-image {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  
+  .carousel-arrow {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    transition: color 0.2s;
+  }
+  
+  .carousel-arrow:hover {
+    color: #007bffce;
+  }
