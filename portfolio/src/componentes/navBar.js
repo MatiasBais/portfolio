@@ -11,6 +11,7 @@ const Navbar = () => {
         CV
       </a>
       <a href="#projects">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
       <a href="#contacto" className="a-right">
         Contacto
       </a>

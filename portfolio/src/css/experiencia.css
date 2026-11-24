@@ -1,0 +1,85 @@
+.experiencia-section {
+  background-color: #2a2a2a;
+  color: #c9c8d4;
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experiencia-title {
+  font-size: 2em;
+  color: #4db6ac;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.experiencia-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.experiencia-item {
+  border-left: 3px solid #4db6ac;
+  padding-left: 24px;
+  position: relative;
+}
+
+.experiencia-item::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #4db6ac;
+  border-radius: 50%;
+  position: absolute;
+  left: -7.5px;
+  top: 6px;
+}
+
+.experiencia-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.experiencia-cargo {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.experiencia-empresa {
+  font-size: 1em;
+  color: #4db6ac;
+  font-style: italic;
+}
+
+.experiencia-periodo {
+  font-size: 0.9em;
+  color: #aaaaaa;
+  margin-left: auto;
+}
+
+.experiencia-tareas {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.experiencia-tareas li {
+  font-size: 1em;
+  color: #c9c8d4;
+}
+
+@media (max-width: 600px) {
+  .experiencia-section {
+    padding: 40px 20px;
+  }
+  .experiencia-periodo {
+    margin-left: 0;
+  }
+}

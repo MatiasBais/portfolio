@@ -12,19 +12,13 @@ const AboutMe = () => {
         <div className="text-container">
           <h2>Acerca de Mi</h2>
           <p>
-            ¡Hola! Soy Matías Bais, Ingeniero en Sistemas de la
-            UTN Argentina.
+            ¡Hola! Soy Matías Bais, Ingeniero en Sistemas de Información recibido en la UTN Rosario (2018–2025).
           </p>
           <p>
-            Me apasiona la programación desde chico y he aprendido varios
-            lenguajes como C#, SQL, Python y JavaScript. Además, durante mi
-            carrera he explorado Java, PHP, SmallTalk, Pascal, C y
-            más.
-            Soy fluido en Inglés
+            Estoy orientado al desarrollo de software y la creación de soluciones tecnológicas, con experiencia en desarrollo Full Stack. Me considero una persona proactiva, responsable y con facilidad para aprender y trabajar en equipo.
           </p>
           <p>
-            He estado involucrado en proyectos usando diferentes frameworks como Node.JS, Laravel, React, ReactNative, entre otros
-            Actualmente estoy colaborando en un proyecto de preservación que intenta revivir y restaurar el juego de Flash de 2010 Backyard Monsters
+            Trabajo con C#, JavaScript (Angular, Node, React), Python, SQL, PHP/Laravel y Java/Spring Boot. Soy hablante nativo de español y fluido en inglés.
           </p>
         </div>
       </div>

@@ -24,6 +24,7 @@ import projectImage3 from "./img/academia.png";
 
 import Contacto from "./componentes/contacto";
 import ProjectPage from "./componentes/projectPage";
+import Experiencia from "./componentes/experiencia";
 
 function App() {
   const proyectos = [
@@ -68,7 +69,7 @@ function App() {
       description:
         "Proyecto en Laravel para buscar información acerca del popular juego de navegador Ikariam",
       github: "https://github.com/MatiasBais/IkaCoordsLaravel",
-      deployed: "https://ikacoords.heliohost.us",
+      //deployed: "https://ikacoords.heliohost.us",
     },
     {
       title: "Academia",
@@ -115,6 +116,7 @@ function App() {
             />
           ))}
         </div>
+        <Experiencia />
         <Contacto />
       </div>
     </>
