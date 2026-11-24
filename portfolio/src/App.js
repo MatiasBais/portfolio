@@ -25,101 +25,95 @@ import projectImage3 from "./img/academia.png";
 import Contacto from "./componentes/contacto";
 import ProjectPage from "./componentes/projectPage";
 import Experiencia from "./componentes/experiencia";
+import { LanguageProvider, useLang } from "./context/LanguageContext";
+import t from "./translations";
 
-function App() {
-  const proyectos = [
-    {
-      title: "FAQ UTN",
-      images: [faqutn1, faqutn2, faqutn3, faqutn4, faqutn5],
-      description:
-        "Web desarrollada con Node para realizar preguntas y respuestas dentro de un contexto acádemico.",
-      github: "https://github.com/MatiasBais/FAQ-UTN",
-      deployed: "",
-      //deployed: "https://faq-utn-production-bb46.up.railway.app/",
-    },
-    {
-      title: "Turnos",
-      images: [turnos],
-      description:
-        "Aplicación enlatada para la reserva de turnos desarrollado con ReactNative",
-      github: "https://github.com/MatiasBais/TurnosFront",
-      deployed: "",
-    },
-    {
-      title: "MeliCompara",
-      images: [melicompara1],
-      description:
-        "Web desarrollada con Flask para comparar precios de Mercado Libre a través del tiempo. MeLi cortó el acceso de la api a búsquedas por lo que ya no anda.",
-      github: "https://github.com/MatiasBais/TPISoporteG12",
-      deployed: "",
-      //deployed: "https://melicompara.pythonanywhere.com/",
-    },
-    {
-      title: "BetuchaAccesorios",
-      images: [betucha1, betucha2],
-      description:
-        "WebApp desarrollada en Laravel para un negocio. Control básico de precios",
-      github: "https://github.com/MatiasBais/betuchaAccesorios",
-      deployed: "",
-    },
-    {
-      title: "IkaCoords",
-      name: "project1",
-      images: [ikacoords1, ikacoords2, ikacoords3],
-      description:
-        "Proyecto en Laravel para buscar información acerca del popular juego de navegador Ikariam",
-      github: "https://github.com/MatiasBais/IkaCoordsLaravel",
-      //deployed: "https://ikacoords.heliohost.us",
-    },
-    {
-      title: "Academia",
-      images: [projectImage3],
-      description:
-        "Aplicación de escritorio hecha con C# para la administración de una universidad.",
-      github: "https://github.com/MatiasBais/AcademiaNet",
-      deployed: "",
-    },
+const proyectosBase = [
+  {
+    key: "FAQ UTN",
+    images: [faqutn1, faqutn2, faqutn3, faqutn4, faqutn5],
+    github: "https://github.com/MatiasBais/FAQ-UTN",
+    deployed: "",
+  },
+  {
+    key: "Turnos",
+    images: [turnos],
+    github: "https://github.com/MatiasBais/TurnosFront",
+    deployed: "",
+  },
+  {
+    key: "MeliCompara",
+    images: [melicompara1],
+    github: "https://github.com/MatiasBais/TPISoporteG12",
+    deployed: "",
+  },
+  {
+    key: "BetuchaAccesorios",
+    images: [betucha1, betucha2],
+    github: "https://github.com/MatiasBais/betuchaAccesorios",
+    deployed: "",
+  },
+  {
+    key: "IkaCoords",
+    images: [ikacoords1, ikacoords2, ikacoords3],
+    github: "https://github.com/MatiasBais/IkaCoordsLaravel",
+    deployed: "",
+  },
+  {
+    key: "Academia",
+    images: [projectImage3],
+    github: "https://github.com/MatiasBais/AcademiaNet",
+    deployed: "",
+  },
+];
 
-  ];
+const AppContent = () => {
+  const { lang } = useLang();
+  const proyectosTrad = t[lang].projects;
 
+  const proyectos = proyectosBase.map((p, i) => ({
+    ...p,
+    title: proyectosTrad[i].title,
+    description: proyectosTrad[i].description,
+  }));
 
   return (
-    <>
-      <div>
-        <Navbar />
-        <AboutMe />
-        <div id="projects" className="project-cards-container">
-          {proyectos.map((proyecto, index) => (
-            <TarjetaProyecto
-              key={index}
-              title={proyecto.title}
-              image={proyecto.images[0]}
-              description={proyecto.description}
-              link={proyecto.link}
-              linkText={proyecto.linkText}
-            />
-          ))}
-        </div>
-        <div className="projects-container">
-          {proyectos.map((proyecto, index) => (
-            <ProjectPage
-              key={index}
-              title={proyecto.title}
-              name={proyecto.name}
-              images={proyecto.images}
-              description={proyecto.description}
-              p1={proyecto.p1}
-              p2={proyecto.p2}
-              github={proyecto.github}
-              deployed={proyecto.deployed}
-              linkText={proyecto.linkText}
-            />
-          ))}
-        </div>
-        <Experiencia />
-        <Contacto />
+    <div>
+      <Navbar />
+      <AboutMe />
+      <div id="projects" className="project-cards-container">
+        {proyectos.map((proyecto, index) => (
+          <TarjetaProyecto
+            key={index}
+            title={proyecto.title}
+            image={proyecto.images[0]}
+            description={proyecto.description}
+          />
+        ))}
       </div>
-    </>
+      <div className="projects-container">
+        {proyectos.map((proyecto, index) => (
+          <ProjectPage
+            key={index}
+            title={proyecto.title}
+            images={proyecto.images}
+            description={proyecto.description}
+            github={proyecto.github}
+            deployed={proyecto.deployed}
+          />
+        ))}
+      </div>
+      <Experiencia />
+      <Contacto />
+    </div>
+  );
+};
+
+function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
   );
 }
 

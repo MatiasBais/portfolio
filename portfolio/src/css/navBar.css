@@ -29,3 +29,22 @@
 .navbar a:hover {
   text-decoration: underline;
 }
+
+.lang-switch {
+  margin-left: 20px;
+  background: transparent;
+  border: 1.5px solid #4db6ac;
+  color: #4db6ac;
+  border-radius: 4px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-size: 0.85em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.lang-switch:hover {
+  background: #4db6ac;
+  color: #333;
+}
