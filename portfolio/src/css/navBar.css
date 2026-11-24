@@ -1,16 +1,17 @@
 .navbar {
-  position: fixed; /* Fijar la barra de navegación en la parte superior */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
   background-color: #333;
   color: white;
   padding: 10px 20px;
+  padding-right: 36px;
   display: flex;
-  justify-content: flex-end; /* Alinear los elementos a la derecha */
-  align-items: center; /* Alinear verticalmente los elementos al centro */
-  z-index: 999; /* Asegurar que la barra de navegación esté sobre otros elementos */
-  padding-right: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999;
 }
 
 .navbar h1 {
